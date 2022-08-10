@@ -6,7 +6,7 @@ import { useState } from "react";
 import "../styles/Profile.css";
 
 export default function ProfileContainer(props) {
-  const { profile, profilePic, name, summary, donate } = props;
+  const { profile, profilePic, name, summary, donation } = props;
 
   console.log(2, profile);
   return (
@@ -16,7 +16,7 @@ export default function ProfileContainer(props) {
           src={profile.profilePic}
           height="300"
           width="400"
-          title="Iframe Example"
+          title="profile picture"
         ></iframe>
       </div>
       <br />
@@ -29,8 +29,14 @@ export default function ProfileContainer(props) {
       <br />
       <p>
         <strong>Donate: </strong>
-        {profile.donate}
+        {profile.donation}
       </p>
+      <iframe
+          src={profile.qr_code}
+          height="200"
+          width="200"
+          title="code"
+        ></iframe>
     </div>
   );
 }

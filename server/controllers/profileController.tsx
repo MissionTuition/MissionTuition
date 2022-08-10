@@ -22,12 +22,15 @@ const profileController = {
   //create user profile 
   createProfile: async (req, res, next) => {
     //add donate here to req.body
-    const { picture, summary, qr_code, donation } = req.body;
+    const user_id = 99;
+    console.log(user_id, 'this is the user id')
+    const { profilePic, name, summary, qr_code, donation } = req.body;
     try {
+      console.log('before db query')
       await db.query(
-        `INSERT INTO Profiles (picture, summary, qr_code, donation)
-        VALUES($1, $2, $3, $4); 
-        `, [picture, summary, qr_code, donation])
+        `INSERT INTO Profiles (user_id, profilePic, name, summary, qr_code, donation)
+        VALUES ($1, $2, $3, $4, $5, $6); 
+        `, [user_id, profilePic, name, summary, qr_code, donation])
       console.log('successful post')
       return next();
     } catch (err) {
