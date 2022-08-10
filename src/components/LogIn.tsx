@@ -25,7 +25,7 @@ function Login() {
       email, 
       inputPassword
     }
-    fetch('/login', {
+    fetch('/api/login', {
       method: 'POST',
       body: JSON.stringify(body), 
       headers: {
