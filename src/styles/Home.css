@@ -1,3 +1,32 @@
 .home {
-    background-color: rgb(187, 0, 255);
+    height: 1000px;
+    width: 100%;
+    background: radial-gradient(#674AB3, #674AB3);
+    position: relative;
+}
+#profCard{
+    width:50%;
+
+}
+.profileInput{
+    margin-top: 5%;
+    border-radius: 10px;
+}
+#prof, #signout {
+  
+    border: none;
+    padding: 15px 30px;
+    border-radius: 8px;
+    display: block;
+    background: linear-gradient(212.38deg, #A348A6  20%,#9075D8 60%);
+    color: #fff;
+    font-weight: bold;
+    -webkit-box-shadow: 0px 9px 15px -11px rgba(88,54,114,1);
+    -moz-box-shadow: 0px 9px 15px -11px rgba(88,54,114,1);
+    box-shadow: 0px 9px 15px -11px rgba(88,54,114,1);
+    float: left;
+    margin-top: 1%;
+    margin-left: 2%;
+    font-size: 18px;
+    border: 2px solid white;
 }
