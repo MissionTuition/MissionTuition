@@ -4,11 +4,12 @@ import { Link } from "react-router-dom";
 import ProfileContainer from "./ProfileContainer.tsx";
 
 function Profile() {
-  const [profile, setProfile] = React.useState("");
+  const [profile, setProfile] = React.useState({});
   const [name, setName] = React.useState<string>("");
   const [profilePic, setProfilePic] = React.useState<string>("");
   const [summary, setSummary] = React.useState<string>("");
-  const [donate, setDonate] = React.useState<string>("");
+  const [donation, setDonation] = React.useState<string>("");
+  const [qr_code, setQr_code] = React.useState<string>("");
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -16,11 +17,12 @@ function Profile() {
       profilePic: profilePic,
       name: name,
       summary: summary,
-      donate: donate,
+      donation: donation,
+      qr_code: qr_code
     };
     setProfile(updateProfile);
 
-    fetch("http://localhost:3000/home", {
+    fetch("/api/profile", {
       method: "POST",
 
       headers: {
@@ -50,20 +52,20 @@ function Profile() {
            
 
             <form onSubmit={handleSubmit}>
-              <label htmlFor="name">Full Name </label>
-              <input
-                value={name}
-                onChange={(e) => setName(e.target.value)}
-                type="text"
-                placeholder="Enter name"
-                className="input"
-              />
               <label htmlFor="picture">Picture</label>
               <input
                 value={profilePic}
                 onChange={(e) => setProfilePic(e.target.value)}
                 type="text"
                 placeholder="Enter picture URL"
+                className="input"
+              />
+              <label htmlFor="name">Full Name </label>
+              <input
+                value={name}
+                onChange={(e) => setName(e.target.value)}
+                type="text"
+                placeholder="Enter name"
                 className="input"
               />
               <label htmlFor="summary">Summary</label>
@@ -76,10 +78,18 @@ function Profile() {
               />
               <label htmlFor="donate">Donate</label>
               <input
-                value={donate}
-                onChange={(e) => setDonate(e.target.value)}
+                value={donation}
+                onChange={(e) => setDonation(e.target.value)}
                 type="text"
-                placeholder="Enter Donation Information"
+                placeholder="Enter Donation Amount Needed"
+                className="input"
+              />
+              <label htmlFor="qrCode">QR Code</label>
+              <input
+                value={qr_code}
+                onChange={(e) => setQr_code(e.target.value)}
+                type="text"
+                placeholder="Enter QR Code"
                 className="input"
               />
 
@@ -97,7 +107,8 @@ function Profile() {
               profilePic={profilePic}
               summary={summary}
               name={name}
-              donate={donate}
+              donation={donation}
+              qr_code={qr_code}
             />
           </div>
           <div className="right-inductor"></div>
