@@ -5,7 +5,7 @@ const path = require('path');
 const PORT = 3000;
 const homeRouter = require('./routes/homeRouter.tsx');
 const profileRouter = require('./routes/feedRouter.tsx');
-const { verifyUser, createUser } = require('./controllers/authController');
+const { verifyUser, createUser, getUserInfo } = require('./controllers/authController');
 const cookieController = require('./controllers/cookieController');
 const sessionController = require('./controllers/sessionController');
 
@@ -19,15 +19,15 @@ app.use(cookieParser());
 
 app.use(express.static(path.resolve(__dirname, '../src/styles/index.css')))
 
-app.get('/', (req, res) => {
-  return res.status(200).sendFile(path.join(__dirname, '../build/index.html'))
-})
+// app.get('/', (req, res) => {
+//   return res.status(200).sendFile(path.join(__dirname, '../build/index.html'))
+// })
 
 //routes
-app.use('/api/profile', profileRouter)
-app.use('/api/home', homeRouter)
+app.use('/profile', profileRouter)
+app.use('/home', homeRouter)
 
-app.post('/login', verifyUser, (req, res) => { return res.status(200).json() })
+app.post('/login', getUserInfo, verifyUser, (req, res) => { return res.status(200).json(res.locals.loginResult)})
 app.post('/signup', createUser, (req, res) => { return res.status(200).json() })
 
 

@@ -16,7 +16,7 @@ function Home() {
       <Link to="/profile">Profile</Link>
       </button>
       <button id='signout'>
-      <Link to="/login">Sign Out</Link>
+      <Link to="/">Sign Out</Link>
       </button>
       <div id='profCard'>
       <ProfileContainer 

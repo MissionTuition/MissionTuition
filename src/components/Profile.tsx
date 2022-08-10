@@ -41,7 +41,7 @@ function Profile() {
         </button>
 
         <button className="btn2">
-        <Link to="/login">Sign Out</Link>
+        <Link to="/">Sign Out</Link>
         </button>
       </header></div>
       <div className="inputBox">

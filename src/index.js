@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import App from './components/App.tsx';
+
 import SignUp from './components/SignUp';
 import LogIn from './components/LogIn.tsx';
 import Home from './components/Home.tsx';
@@ -16,8 +16,7 @@ root.render(
   <React.StrictMode>
     <BrowserRouter>
          <Routes>
-        <Route path="/" element={<App />} />
-        <Route path="/login" element={<LogIn />} />  
+        <Route path="/" element={<LogIn />} />   
         <Route path="/signup" element={<SignUp />} />  
         <Route path="/home" element={<Home />} />  
         <Route path="/profile" element={<Profile />} />  

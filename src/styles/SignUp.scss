@@ -1,5 +1,5 @@
 #logIn-link {
-    background-color:#9075D8;
+    color: #3745b5;
     margin-top: 5%;
     
   }
@@ -49,6 +49,8 @@
       .inputFields{
         opacity:1;
         transition-delay:0.2s;
+
+    
       }
     }
   }
@@ -82,8 +84,8 @@
   
   .inputFields{
     position:absolute;
-    width:400px;
-    height:400px;
+    width:500px;
+    height:500px;
     top:50%;left:50%;
     margin-left:-200px;
     margin-top:-200px;
@@ -104,6 +106,7 @@
       border-radius:1px;
       border:1px solid #ccc;
       font-family:inherit;
+      
     }
    
   }
