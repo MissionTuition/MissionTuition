@@ -15,7 +15,7 @@ function SignUp() {
   const [firstName, firstNameOnChange] = useInput('');
   const [lastName, lastNameOnChange] = useInput('');
   const [email, emailOnChange] = useInput('');
-  const [password, passwordOnChange] = useInput('');
+  const [inputPassword, passwordOnChange] = useInput('');
 
   const navigate = useNavigate()
   const navigateToProfile = () => {
@@ -24,12 +24,12 @@ function SignUp() {
   const createUser = () => {
     const body = {
       email,
-      password,
+      inputPassword,
       firstName,
       lastName
     }
 
-    fetch('/signup', {
+    fetch('/api/signup', {
       method: 'POST',
       body: JSON.stringify(body),
       headers: {

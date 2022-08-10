@@ -25,7 +25,7 @@ function Login() {
       email, 
       inputPassword
     }
-    fetch('/login', {
+    fetch('/api/login', {
       method: 'POST',
       body: JSON.stringify(body), 
       headers: {
@@ -33,7 +33,11 @@ function Login() {
       }
     })
     .then((data) => {
-      console.log(data)
+      console.log('frontend data:', data)
+      return data.json()
+    })
+    .then((data) => {
+      console.log('hereeeee')
       if(data) navigateToProfile()
       else alert('Wrong Email or Password')
     })

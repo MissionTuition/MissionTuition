@@ -1,7 +1,7 @@
 //katherine 
 //const db = require('../model/model.tsx');
 
-export { };
+// export { };
 const cookieController = {
   setCookie: async (req, res, next) => {
     try {
