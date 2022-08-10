@@ -7,6 +7,7 @@ import LogIn from './components/LogIn.tsx';
 import Home from './components/Home.tsx';
 import Profile from './components/Profile.tsx';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+import ProfileContainer from './components/ProfileContainer.tsx';
 
 // import { BrowserRouter, Routes, Route, } from "react-router-dom";
 
