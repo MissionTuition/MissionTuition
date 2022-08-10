@@ -35,18 +35,18 @@ function Profile() {
   console.log(profile);
   return (
     <div className="profile">
-            <div className="links"><header className="profile-header">
+            <div className="top_link"><header className="profile-header">
               <button className="btn1">
         <Link to="/home">Feed</Link>
         </button>
 
         <button className="btn2">
-        <Link to="/">Sign Out</Link>
+        <Link to="/login">Sign Out</Link>
         </button>
       </header></div>
       <div className="inputBox">
-        <div className="inputFields">
-          <div className="responseArea">
+        <div className="left">
+          <div className="contact">
            
 
             <form onSubmit={handleSubmit}>
@@ -89,8 +89,8 @@ function Profile() {
             </form>
           </div>
         </div>
-        <div className="profPrev">
-          <div className="prevText">
+        <div className="right">
+          <div className="right-text">
             <p id="prevText">Your Profile Preview:</p>
             <ProfileContainer
               profile={profile}
@@ -100,7 +100,7 @@ function Profile() {
               donate={donate}
             />
           </div>
-       
+          <div className="right-inductor"></div>
         </div>
       </div>
     </div>

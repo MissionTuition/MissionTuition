@@ -11,7 +11,6 @@ export default function ProfileContainer(props) {
   console.log(2, profile);
   return (
     <div className="profileInput">
- 
       <div className="profile-image">
         <iframe
           src={profile.profilePic}

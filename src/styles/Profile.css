@@ -4,11 +4,11 @@
 
 @import url(https://fonts.googleapis.com/css?family=Oswald);
 a{
-    color: white;
+    color:white;
 }
-form, input{
-    font-size: 24px;
- 
+form {
+    font-size: 18px;
+
 }
 .profileInput {
   font-family: 'Lato', Arial, sans-serif;
@@ -27,6 +27,7 @@ form, input{
   margin-left: 10%;
   overflow: scroll;
   border: 3px solid #674AB3;
+  
 
 }
 
@@ -75,10 +76,10 @@ img{
     background: radial-gradient(#674AB3, #674AB3);
     position: relative;
 }
+
 .inputBox {
     width: 90%;
     height: 80%;
-    border: 2px solid white;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -88,19 +89,20 @@ img{
     box-shadow: 1px 4px 22px -8px #0004;
     display: flex;
     overflow: hidden;
+    border: 2px solid white;
 }
-.inputBox .inputFields{
+.inputBox .left{
   width: 41%;
   height: 100%;
   padding: 25px 25px;
   
 }
-.inputBox .profPrev{
+.inputBox .right{
   width: 59%;
   height: 100%  
 }
 
-.inputFields .responseArea{
+.left .contact{
 	display: flex;
     align-items: center;
     justify-content: center;
@@ -109,12 +111,14 @@ img{
     width: 73%;
     margin: auto;
 }
-.inputFields h3{
+.left h3{
   text-align: center;
   margin-bottom: 40px;
 }
-
-.inputFields input {
+/* .sum{
+    height: 120px;
+    } */
+.left input {
     border: none;
     width: 80%;
     margin: 15px 0px;
@@ -124,14 +128,14 @@ img{
     overflow: hidden;
     background: transparent;
     font-weight: 600;
-    font-size: 18px;
+    font-size: 14px;
     overflow: hidden;
     resize: both;
     color:#674AB3;
     
 }
 
-.inputFields{
+.left{
 	background: linear-gradient(-45deg, white, white);
 }
 .submit {
@@ -147,30 +151,30 @@ img{
     -webkit-box-shadow: 0px 9px 15px -11px rgba(88,54,114,1);
     -moz-box-shadow: 0px 9px 15px -11px rgba(88,54,114,1);
     box-shadow: 0px 9px 15px -11px rgba(88,54,114,1);
-    font-size: 20px;
+    font-size: 18px;
 }
 
 
 
-.profPrev {
+.right {
 	background: linear-gradient(212.38deg, #A348A6  20%,#9075D8 60%);
 	color: #fff;
 	position: relative;
 }
 
-.profPrev .prevText{
+.right .right-text{
   height: 100%;
   position: relative;
   transform: translate(0%, 45%);
 }
-.prevText h2{
+.right-text h2{
   display: block;
   width: 100%;
   text-align: center;
   font-size: 50px;
   font-weight: 500;
 }
-.prevText h5{
+.right-text h5{
   display: block;
   width: 100%;
   text-align: center;
@@ -178,8 +182,16 @@ img{
   font-weight: 400;
 }
 
-
-.links img {
+.right .right-inductor{
+  position: absolute;
+  width: 70px;
+  height: 7px;
+  background: #fff0;
+  left: 50%;
+  bottom: 70px;
+  transform: translate(-50%, 0%);
+}
+.top_link img {
     width: 28px;
     padding-right: 7px;
     margin-top: -3px;
@@ -196,18 +208,19 @@ img{
 }
 
 label {
-    color:#674AB3
+    color:#674AB3;
+    font-size: 18px;
 }
 
 p {
     font-size: 20px;
 }
 
-.inputFields .links  {
+.left .top_link a {
 color: white;
     font-weight: bolder;
 }
-.inputFields .links{
+.left .top_link{
   height: 20px
 }
 
@@ -226,7 +239,7 @@ color: white;
         float: left;
         margin-top: 1%;
         margin-left: 2%;
-        font-size: 18px;
         border: 2px solid white;
+        font-size: 18px;
+    
 }
-
