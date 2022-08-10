@@ -11,7 +11,7 @@ const useInput = (initial) => {
 }
 
 function Login() {
-  const [userName, userNameOnChange] = useInput(''); 
+  const [email, emailOnChange] = useInput(''); 
   const [inputPassword, inputPasswordOnChange] = useInput(''); 
 
 
@@ -22,7 +22,7 @@ function Login() {
 
   const checkUser = () => {
     const body = {
-      userName, 
+      email, 
       inputPassword
     }
     fetch('/login', {
@@ -49,8 +49,8 @@ function Login() {
       <header className="login-header">
         Log In
       </header>
-      <label className='username'>
-        <input type="text" name="userNameField" placeholder='Username' onChange={userNameOnChange}/> 
+      <label className='email'>
+        <input type="text" name="emailField" placeholder='email' onChange={emailOnChange}/> 
       </label>
       <label className='password'>
         <input type="password" name="passwordField" placeholder='Password' onChange={inputPasswordOnChange}/> 

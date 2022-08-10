@@ -24,8 +24,8 @@ app.use(express.static(path.resolve(__dirname, '../src/styles/index.css')))
 // })
 
 //routes
-app.use('/api/profile', profileRouter)
-app.use('/api/home', homeRouter)
+app.use('/profile', profileRouter)
+app.use('/home', homeRouter)
 
 app.post('/login', getUserInfo, verifyUser, (req, res) => { return res.status(200).json(res.locals.loginResult)})
 app.post('/signup', createUser, (req, res) => { return res.status(200).json() })

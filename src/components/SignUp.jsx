@@ -48,8 +48,8 @@ function SignUp() {
 
   return (
     <div className='signUp-container'>
-        <div class="top"></div>
-  <div class="bottom"></div>
+        <div className="top"></div>
+  <div className="bottom"></div>
       <div className="signUp">
         <div className='inputFields'>
         <header className="signUp-header">
@@ -72,7 +72,7 @@ function SignUp() {
         </label>
         <button id='signUp-button' onClick={createUser}> Sign Up </button>
         <div id='logIn-link'>
-          <Link to='/login'> Have an account? Log in! </Link>
+          <Link to='/'> Have an account? Log in! </Link>
         </div>
         </div>
         </div>
