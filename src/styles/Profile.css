@@ -1,0 +1,245 @@
+
+
+@import url(https://fonts.googleapis.com/css?family=Lato);
+
+@import url(https://fonts.googleapis.com/css?family=Oswald);
+a{
+    color:white;
+}
+form {
+    font-size: 18px;
+
+}
+.profileInput {
+  font-family: 'Lato', Arial, sans-serif;
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+  min-width: 80%;
+  max-width: 80%;
+  width: 100%;
+  background-color: #ffffff;
+  color: #000000;
+  text-align: center;
+  font-size: 16px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
+  height: 70%;
+  margin-left: 10%;
+  overflow: scroll;
+  border: 3px solid #674AB3;
+  
+
+}
+
+
+
+.profileInput .profile-image {
+  padding: 4% 10% 0;
+}
+
+.profileInput .profile-image img {
+  max-width: 100%;
+  vertical-align: top;
+  position: relative;
+  border-radius: 50%;
+  max-width: 100%;
+}
+
+.profileInput figcaption {
+  padding: 5% 10% 15%;
+}
+
+.profileInput h3 {
+  font-family: 'Oswald';
+  text-transform: uppercase;
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 24px;
+  margin: 3px 0;
+}
+
+.profileInput h5 {
+  font-weight: 400;
+  margin: 0;
+  color: #000000;
+  letter-spacing: 1px;
+}
+
+
+
+img{
+	width: 100%;
+}
+.profile {
+    height: 1000px;
+    width: 100%;
+    background: radial-gradient(#674AB3, #674AB3);
+    position: relative;
+}
+
+.inputBox {
+    width: 90%;
+    height: 80%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background: #CEA2D7;
+    border-radius: 10px;
+    box-shadow: 1px 4px 22px -8px #0004;
+    display: flex;
+    overflow: hidden;
+    border: 2px solid white;
+}
+.inputBox .left{
+  width: 41%;
+  height: 100%;
+  padding: 25px 25px;
+  
+}
+.inputBox .right{
+  width: 59%;
+  height: 100%  
+}
+
+.left .contact{
+	display: flex;
+    align-items: center;
+    justify-content: center;
+    align-self: center;
+    height: 100%;
+    width: 73%;
+    margin: auto;
+}
+.left h3{
+  text-align: center;
+  margin-bottom: 40px;
+}
+/* .sum{
+    height: 120px;
+    } */
+.left input {
+    border: none;
+    width: 80%;
+    margin: 15px 0px;
+    border-bottom: 1px solid #674AB3;
+    padding: 7px 9px;
+    width: 100%;
+    overflow: hidden;
+    background: transparent;
+    font-weight: 600;
+    font-size: 14px;
+    overflow: hidden;
+    resize: both;
+    color:#674AB3;
+    
+}
+
+.left{
+	background: linear-gradient(-45deg, white, white);
+}
+.submit {
+    border: none;
+    padding: 15px 70px;
+    border-radius: 8px;
+    display: block;
+    margin: auto;
+    margin-top: 120px;
+	background: linear-gradient(212.38deg, #A348A6  20%,#9075D8 60%);
+    color: #fff;
+    font-weight: bold;
+    -webkit-box-shadow: 0px 9px 15px -11px rgba(88,54,114,1);
+    -moz-box-shadow: 0px 9px 15px -11px rgba(88,54,114,1);
+    box-shadow: 0px 9px 15px -11px rgba(88,54,114,1);
+    font-size: 18px;
+}
+
+
+
+.right {
+	background: linear-gradient(212.38deg, #A348A6  20%,#9075D8 60%);
+	color: #fff;
+	position: relative;
+}
+
+.right .right-text{
+  height: 100%;
+  position: relative;
+  transform: translate(0%, 45%);
+}
+.right-text h2{
+  display: block;
+  width: 100%;
+  text-align: center;
+  font-size: 50px;
+  font-weight: 500;
+}
+.right-text h5{
+  display: block;
+  width: 100%;
+  text-align: center;
+  font-size: 19px;
+  font-weight: 400;
+}
+
+.right .right-inductor{
+  position: absolute;
+  width: 70px;
+  height: 7px;
+  background: #fff0;
+  left: 50%;
+  bottom: 70px;
+  transform: translate(-50%, 0%);
+}
+.top_link img {
+    width: 28px;
+    padding-right: 7px;
+    margin-top: -3px;
+}
+
+
+
+#prevText{
+    margin-top: -300px;
+    font-size: 30px;
+    text-align: center;
+    font-weight: bolder;
+   
+}
+
+label {
+    color:#674AB3;
+    font-size: 18px;
+}
+
+p {
+    font-size: 20px;
+}
+
+.left .top_link a {
+color: white;
+    font-weight: bolder;
+}
+.left .top_link{
+  height: 20px
+}
+
+.btn1, .btn2 {
+  
+        border: none;
+        padding: 15px 30px;
+        border-radius: 8px;
+        display: block;
+        background: linear-gradient(212.38deg, #A348A6  20%,#9075D8 60%);
+        color: #fff;
+        font-weight: bold;
+        -webkit-box-shadow: 0px 9px 15px -11px rgba(88,54,114,1);
+        -moz-box-shadow: 0px 9px 15px -11px rgba(88,54,114,1);
+        box-shadow: 0px 9px 15px -11px rgba(88,54,114,1);
+        float: left;
+        margin-top: 1%;
+        margin-left: 2%;
+        border: 2px solid white;
+        font-size: 18px;
+    
+}
