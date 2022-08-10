@@ -9,6 +9,22 @@ function Home() {
   const [profilePic, setProfilePic] = React.useState<string>("");
   const [summary, setSummary] = React.useState<string>("");
   const [donate, setDonate] = React.useState<string>("");
+
+  fetch("/home", {
+    method: "GET",
+    headers: {
+      "Content-Type": "application/json",
+    },
+  })
+    .then((res) => res.json())
+    .then((data) => {
+        data.forEach((el) => {
+       //push into array
+        });
+      })
+    .catch((err) => console.log(err));
+    const testArr = ['profile-1', 'profile-2', 'profile-3']; 
+// const renderedArr = testArr.map(() => );
   return (
     <div className="home">
   
@@ -19,6 +35,12 @@ function Home() {
       <Link to="/">Sign Out</Link>
       </button>
       <div id='profCard'>
+        {/* {testArr.map(el => (
+          <div key={testArr.id}>
+            {testArr}
+            </div>
+        )
+        )} */}
       <ProfileContainer 
 profile={profile}
 setProfile={setProfile}
