@@ -32,6 +32,8 @@ function Profile() {
     }).then((response) => response.json());
     // .then(useNavigate("/success"))
   };
+
+  
   console.log(profile);
   return (
     <div className="profile">
