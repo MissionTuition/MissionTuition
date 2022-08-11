@@ -33,8 +33,8 @@ export default function ProfileContainer(props) {
       </p>
       <iframe
           src={profile.qr_code}
-          height="200"
-          width="200"
+          height="300"
+          width="300"
           title="code"
         ></iframe>
     </div>

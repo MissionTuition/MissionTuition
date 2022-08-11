@@ -24,14 +24,13 @@ function Profile() {
 
     fetch("/api/profile", {
       method: "POST",
-
       headers: {
         "Content-Type": "application/json",
         // x-www-form-urlencoded
       },
 
       body: JSON.stringify(profile),
-    }).then((response) => response.json());
+    })
     // .then(useNavigate("/success"))
   };
 

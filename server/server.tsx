@@ -6,7 +6,7 @@ const bodyParser = require('body-parser');
 const apiRouter = require('./routes/apiRouter.tsx');
 // const homeRouter = require('./routes/homeRouter.tsx');
 // const profileRouter = require('./routes/profileRouter.tsx');
-// const { verifyUser, createUser, getUserInfo } = require('./controllers/authController.tsx');
+const { verifyUser, createUser, getUserInfo } = require('./controllers/authController.tsx');
 // const cookieController = require('./controllers/cookieController.tsx');
 // const sessionController = require('./controllers/sessionController.tsx');
 
