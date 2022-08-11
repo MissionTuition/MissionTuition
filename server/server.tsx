@@ -6,7 +6,7 @@ const bodyParser = require('body-parser');
 const apiRouter = require('./routes/apiRouter.tsx');
 // const homeRouter = require('./routes/homeRouter.tsx');
 // const profileRouter = require('./routes/profileRouter.tsx');
-// const { verifyUser, createUser, getUserInfo } = require('./controllers/authController.tsx');
+const { verifyUser, createUser, getUserInfo } = require('./controllers/authController.tsx');
 // const cookieController = require('./controllers/cookieController.tsx');
 // const sessionController = require('./controllers/sessionController.tsx');
 
@@ -34,6 +34,8 @@ app.use('/api', apiRouter)
 //   console.log('made it to apiRouter signup');
 //   return res.status(200).json() });
 
+app.post('/login', getUserInfo, verifyUser, (req, res) => { return res.status(200).json(res.locals.loginResult)})
+app.post('/signup', createUser, (req, res) => { return res.status(200).json() })
 
 
 
